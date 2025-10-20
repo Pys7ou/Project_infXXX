@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+
+actor Пассажир
+actor Водитель
+
+usecase "Заказать машину" as U1
+usecase "Поставить оценку водителю" as U2
+usecase "Оставить чаевые" as U3
+usecase "Отменить заказ" as U4
+usecase "Уточнить местоположение машины" as U5
+
+usecase "Принять заказ" as U6
+usecase "Отказаться от заказа" as U7
+usecase "Поставить оценку пассажиру" as U8
+usecase "Уточнить адрес подачи машины" as U9
+usecase "Отправить жалобу на пассажира" as U10
+
+Пассажир --> U1
+U1 --> U2
+U1 --> U4
+U1 --> U5
+U2 --> U3
+
+Водитель --> U6
+Водитель --> U7
+U6 --> U9
+U6 --> U8
+U8 --> U10
+@enduml
