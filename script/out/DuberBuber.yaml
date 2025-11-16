@@ -1,0 +1,45 @@
+- order_id: 1
+  driver:
+    driver_id: 2
+    name: Капитанов Иван Александрович
+    rating: 4.7
+  passenger:
+    passenger_id: 3
+    name: Боярсков Павел Владиславович
+    rating: 2.8
+  order_details:
+    delivery_address: Ул. Осипенко, д. 82
+    final_address: Ул. Нижневолжсая, д. 19
+    time_order: '19:59'
+    price: 427.0
+    distance_km: 5
+- order_id: 2
+  driver:
+    driver_id: 1
+    name: Славка Андрей Владиславович
+    rating: 2.3
+  passenger:
+    passenger_id: 1
+    name: Раева Кира Сергеевна
+    rating: 4.3
+  order_details:
+    delivery_address: Ул. Красная Поляна, д. 2, подъезд 1
+    final_address: Ул. Бурнаковская, д. 75
+    time_order: '15:06'
+    price: 654.0
+    distance_km: 1.9
+- order_id: 3
+  driver:
+    driver_id: 3
+    name: Хороших Егор Эдуардович
+    rating: 3.6
+  passenger:
+    passenger_id: 2
+    name: Галкин Илья Алексеевич
+    rating: 5.0
+  order_details:
+    delivery_address: Ул. Минина, д. 24
+    final_address: Ул. Рожденственская, д 10
+    time_order: '6:44'
+    price: 987.0
+    distance_km: 2.8

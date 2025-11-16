@@ -1,0 +1,37 @@
+@startuml
+hide circle
+skinparam linetype ortho
+entity "Driver" as Driver {
+  *driver_id : INTEGER <<PK>>
+  --
+  Rating: REAL
+  Name: TEXT
+}
+
+entity "Passenger" as Passenger {
+  *Passenger_id : INTEGER <<PK>>
+  --
+  Rating: REAL
+  Name: TEXT
+}
+
+entity "Order" as Order {
+  *Order_id : INTEGER <<PK>>
+  --
+ driver_id: REAL <<FK>>
+ Passenger_id: REAL <<FK>>
+ About_order_id: REAL <<FK>>
+}
+entity "About_order" as About_order {
+  *About_order_id : INTEGER <<PK>>
+  --
+ Delivery_address: TEXT
+ Order_time: TEXT
+ Price: TEXT
+ Final_address: TEXT
+ Distance: BOOLEAN
+}
+Driver ||--o{ Order
+Passenger ||--o{ Order
+About_order ||--o{ Order
+@enduml
