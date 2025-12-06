@@ -29,7 +29,7 @@ entity "About_order" as About_order {
  Order_time: TEXT
  Price: TEXT
  Final_address: TEXT
- Distance: BOOLEAN
+ Distance: REAL
 }
 Driver ||--o{ Order
 Passenger ||--o{ Order

@@ -12,7 +12,7 @@
     final_address: Ул. Нижневолжсая, д. 19
     time_order: '19:59'
     price: 427.0
-    distance_km: 5
+    distance_km: 5.0
 - order_id: 2
   driver:
     driver_id: 1
